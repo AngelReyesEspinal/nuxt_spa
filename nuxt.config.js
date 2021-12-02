@@ -23,7 +23,8 @@ export default {
   css: [ 
     '@/assets/bootstrap/css/bootstrap.min.css',
     'aos/dist/aos.css',
-    '@/assets/animate/animate.css'
+    '@/assets/animate/animate.css',
+    '@/assets/v-tooltip/tooltip.css',
   ],
 
   js: [
@@ -32,10 +33,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {
-      src: "@/plugins/aos",
-      ssr: false
-    }
+    { src: "@/plugins/aos", ssr: false },
+    { src: "@/plugins/v-tooltip.js", ssr: false },
+    { src: "@/filters", ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
