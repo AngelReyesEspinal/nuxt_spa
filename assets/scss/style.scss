@@ -1,0 +1,604 @@
+#special-section-clippers-season-20192020 {
+    .content {
+        overflow: hidden;
+        .container {
+            @media screen and (max-width: 991px) {
+                width: 91% !important;
+                max-width: unset !important;
+            }
+        }
+        .single-game-top {
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: -1px;
+            background-color: white;
+            min-height: 91px;
+            padding: 30px 25px 15px 25px;
+            border: solid 1px #d7d7d7;
+            .btn {
+                border: solid 1px #e7e7e7;
+                transition: 0.2s;
+                &:focus {
+                    box-shadow: none;
+                }
+                &:hover {
+                    border: #1e4692 solid 1px !important;
+                }
+            }
+            .btn-collapse {
+                border: #e7e7e7 solid 1px;
+                margin-right: 5px;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .btn-collapse-active {
+                border: #1e4692 solid 1px !important;
+                color: #1e4692 !important;
+                margin-right: 5px;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .icon-filter {
+                width: 15px;
+                margin-right: 8px;
+            }
+            h1 {
+                text-transform: uppercase;
+                font-size: 30px;
+                span {
+                    color: #cd132c;
+                }
+            }
+            .order-inp {
+                display: flex;
+                flex-direction: row;
+                flex-flow: row nowrap;
+                @media screen and (max-width: 500px) {
+                    flex-flow: column;
+                    flex-direction: column;
+                }
+            }
+            .collapse-filter {
+                margin-top: 20px;
+                .card {
+                    border: none;
+                    p {
+                        margin-bottom: 0px;
+                        font-size: 14px;
+                        @media screen and (max-width: 768px) {
+                            margin-top: 15px;
+                        }
+                    }
+                    .slider {
+                        -webkit-appearance: none;
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 5px;
+                        background: #1e4692;
+                        outline: none;
+                        opacity: 0.7;
+                        -webkit-transition: .2s;
+                        transition: opacity .2s;
+                    }
+                    .slider:hover {
+                        opacity: 1;
+                    }
+                    .slider::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #3461b6;
+                        cursor: pointer;
+                    }
+                    .slider::-moz-range-thumb {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background: #4CAF50;
+                        cursor: pointer;
+                    }
+                    .btn-hot {
+                        width: 80px;
+                        height: 27px;
+                        font-size: 12px;
+                        border-radius: 30px;
+                        background-color: #e7e7e7;
+                        border: none;
+                        margin-top: 7px;
+                        padding-top: 4px;
+                        padding-left: 15px;
+                        background-image: url(../fire.svg);
+                        background-position: left;
+                        background-position-x: 6px;
+                        background-size: 20px;
+                        background-repeat: no-repeat;
+                        cursor: pointer !important;
+                    }
+                    .btn-hot-2 {
+                        width: 80px;
+                        height: 27px;
+                        font-size: 12px;
+                        border-radius: 30px;
+                        padding-top: 4px;
+                        background-color: #cd132c;
+                        color: white;
+                        border: none;
+                        margin-top: 7px;
+                        padding-left: 15px;
+                        background-image: url(../white-flame.svg);
+                        background-position: left;
+                        background-position-x: 9px;
+                        background-size: 12px;
+                        background-repeat: no-repeat;
+                        cursor: pointer !important;
+                    }
+                }
+            }
+            select {
+                padding: 7px 0px;
+                padding-right: 35px;
+                padding-left: 15px;
+                border-radius: 5px;
+                font-size: 14px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -o-appearance: none;
+                background-image: url(../selector.png);
+                background-position: 93% center;
+                background-size: 10px;
+                background-repeat: no-repeat;
+                padding-right: 25px;
+                background-color: white;
+                border: solid 1px #d7d7d7;
+                height: 40px;
+                width: 130px;
+                margin-right: 15px;
+                @media screen and (max-width: 500px) {
+                    width: 100% !important;
+                }
+                &:focus {
+                    box-shadow: none !important;
+                    border: #2c68dd solid 1px !important;
+                }
+                &:hover {
+                    border: #2c68dd 1px !important;
+                    transition: 0.2s;
+                }
+            }
+            .team {
+                width: 180px;
+            }
+            .last-select {
+                border: solid 1px #d7d7d7;
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                }
+                .btn {
+                    font-size: 16px;
+                    &:focus {
+                        box-shadow: none !important;
+                    }
+                }
+            }
+            //general header style responsive
+            @media screen and (max-width: 991px) {
+                flex-flow: column;
+                flex-direction: column;
+                align-items: center !important;
+                #Filters {
+                    width: 100%;
+                }
+            }
+        }
+        .single-game-body {
+            .filters-title {
+                color: #cd132c;
+                margin-bottom: 7px;
+                margin-top: 20px;
+            }
+            .filter-body-title {
+                margin-left: 15px;
+            }
+            .red-fire {
+                width: 15px;
+                margin-left: 30px;
+                margin-top: -10px;
+            }
+            .game-cont {
+                margin-left: 10px;
+                background-color: #cd132c;
+                padding: 5px;
+                padding-top: 6px;
+                font-size: 12px;
+                color: white;
+                border-radius: 5px;
+                margin-left: 15px;
+            }
+            .accordion {
+                .card {
+                    .card-header {
+                        background-color: white;
+                        @media screen and (max-width: 500px) {
+                            padding: 0;
+                        }
+                        .pre-view {
+                            display: flex;
+                            flex-direction: row;
+                            flex-flow: row nowrap;
+                            justify-content: space-between;
+                            flex: 1 1 auto;
+                            margin-top: 25px;
+                            margin-bottom: 25px;
+                            align-items: center;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            @media screen and (max-width: 1100px) {
+                                padding-left: 0px;
+                                padding-right: 0px;
+                            }
+                            @media screen and (max-width: 991px) {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                                flex-direction: column;
+                                flex-flow: column wrap;
+                            }
+                            .btn-arrow {
+                                margin-right: 23px;
+                                font-size: 25px;
+                                background: transparent;
+                                transition: 0.2s ease-in-out;
+                            }
+                            .btn-arrow:focus {
+                                box-shadow: none !important;
+                            }
+                            h4 {
+                                font-size: 12px;
+                            }
+                            h3 {
+                                font-size: 18px;
+                            }
+                            .left-side {
+                                display: flex;
+                                flex-direction: row;
+                                flex-flow: row nowrap;
+                                justify-content: space-between;
+                                flex: 1 1 auto;
+                                align-items: center;
+                                margin-right: 80px;
+                                .group-1 {
+                                    flex-flow: column;
+                                    text-align: center;
+                                    display: flex;
+                                    @media screen and (max-width: 500px) {
+                                        width: 150px;
+                                    }
+                                }
+                                .group-2 {
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-flow: row nowrap;
+                                    align-items: center;
+                                    width: 300px;
+                                    @media screen and (max-width: 500px) {
+                                        justify-content: center;
+                                        margin-left: -15px !important;
+                                    }
+                                    .picture {
+                                        margin-right: 25px;
+                                        display: flex;
+                                        align-items: center;
+                                        left: 0;
+                                        width: 150px;
+                                        @media screen and (max-width: 500px) {
+                                            height: 80px;
+                                            justify-content: center;
+                                            img {
+                                                width: auto !important;
+                                                height: 100% !important;
+                                            }
+                                        }
+                                        img {
+                                            width: 100px;
+                                            height: 100px;
+                                            width: 150px;
+                                        }
+                                    }
+                                    .txt {
+                                        flex-direction: column;
+                                        width: 120px;
+                                        @media screen and (max-width: 500px) {
+                                            width: auto;
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                .group-3 {
+                                    @media screen and (max-width: 500px) {
+                                        h4 {
+                                            display: none;
+                                        }
+                                    }
+                                    width: 150px;
+                                }
+                                h3 {
+                                    margin-bottom: 0px;
+                                }
+                                .btn {
+                                    width: 80px;
+                                    font-size: 10px;
+                                    border-radius: 30px;
+                                    padding: 2px 8px;
+                                    margin-top: 3px;
+                                }
+                                .btn-indicator {
+                                    background-color: #1e469270 !important;
+                                    border: none;
+                                    padding: 3;
+                                }
+                                @media screen and (max-width: 991px) {
+                                    margin-right: 0px;
+                                    padding-bottom: 17px;
+                                    border-bottom: solid 1px #eeeeee;
+                                    margin-bottom: 17px;
+                                    width: 100%;
+                                    padding-left: 0px;
+                                    padding-right: 0px;
+                                    #btn-arrow {
+                                        display: none;
+                                    }
+                                    .group {
+                                        margin-right: 30px;
+                                    }
+                                }
+                                @media screen and (max-width: 768px) {
+                                    .group {
+                                        margin-right: 0px;
+                                    }
+                                    .group-2 {
+                                        .picture {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                                @media screen and (max-width: 500px) {
+                                    flex-wrap: nowrap;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-bottom: 30px;
+                                    .group {
+                                        margin-right: 0px;
+                                        margin-bottom: 20px;
+                                        h3 {
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    .group-3 {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                        .right-side {
+                            display: flex;
+                            flex-direction: row;
+                            flex-flow: row nowrap;
+                            justify-content: flex-end;
+                            align-items: center;
+                            flex: 1 1 auto;
+                            @media screen and (max-width: 991px) {
+                                flex-direction: column;
+                                flex-flow: column wrap;
+                                text-align: center;
+                            }
+                            .group-1 {
+                                margin-right: 50px;
+                                @media screen and (max-width: 991px) {
+                                    margin-right: 0;
+                                }
+                            }
+                            .group-2 {
+                                display: flex;
+                                flex-direction: column;
+                                @media screen and (max-width: 991px) {
+                                    display: block !important;
+                                    margin: 5px auto;
+                                }
+                                @media screen and (max-width: 500px) {
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    text-align: center !important;
+                                    justify-content: center;
+                                }
+                                .btn {
+                                    width: 122px;
+                                    font-size: 11px;
+                                    border-radius: 30px;
+                                    padding: 10px 19spx;
+                                    margin-bottom: 10px;
+                                    background: rgba(30, 70, 146, 1);
+                                    background: -moz-linear-gradient( left, rgba(30, 70, 146, 1) 0%, rgba(46, 108, 231, 1) 100%);
+                                    background: -webkit-gradient( left top, right top, color-stop(0%, rgba(30, 70, 146, 1)), color-stop(100%, rgba(46, 108, 231, 1)));
+                                    background: -webkit-linear-gradient( left, rgba(30, 70, 146, 1) 0%, rgba(46, 108, 231, 1) 100%);
+                                    background: -o-linear-gradient( left, rgba(30, 70, 146, 1) 0%, rgba(46, 108, 231, 1) 100%);
+                                    background: -ms-linear-gradient( left, rgba(30, 70, 146, 1) 0%, rgba(46, 108, 231, 1) 100%);
+                                    background: linear-gradient( to right, rgba(30, 70, 146, 1) 0%, rgba(46, 108, 231, 1) 100%);
+                                    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e4692', endColorstr='#2e6ce7', GradientType=1);
+                                }
+                                .btn-resale {
+                                    background: white !important;
+                                    color: rgba(30, 70, 146, 1);
+                                    &:hover {
+                                        color: rgba(30, 70, 146, 1);
+                                    }
+                                }
+                                ul {
+                                    padding-left: 0px;
+                                    margin-top: -10px;
+                                    margin-bottom: 0px;
+                                    @media screen and (max-width: 991px) {
+                                        text-align: right;
+                                    }
+                                    @media screen and (max-width: 500px) {
+                                        float: right;
+                                        margin-right: 8%;
+                                    }
+                                    @media screen and (max-width: 390px) {
+                                        float: right;
+                                        margin-right: 6%;
+                                    }
+                                    li {
+                                        display: inline-block;
+                                        list-style: none;
+                                        p {
+                                            font-size: 10px;
+                                            margin-bottom: 0px;
+                                            @media screen and (max-width: 500px) {
+                                                font-size: 8px;
+                                            }
+                                        }
+                                        img {
+                                            width: 52px;
+                                            margin-top: 0px;
+                                            @media screen and (max-width: 500px) {
+                                                font-size: 35px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footer-description-card {
+                        display: none;
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+                }
+                .card-body {
+                    .left-side {
+                        display: flex;
+                        flex-direction: row;
+                        flex-flow: row;
+                        @media screen and (max-width: 991px) {
+                            flex-direction: column;
+                            flex-flow: column wrap;
+                            align-items: center;
+                        }
+                        .child {
+                            max-width: 360px;
+                            border: solid 1px #d7d7d7;
+                            border-radius: 10px;
+                            @media screen and (max-width: 991px) {
+                                display: flex;
+                                flex-direction: row;
+                                flex-flow: row;
+                                position: relative;
+                                width: 100%;
+                                margin-bottom: 15px;
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            img {
+                                height: 100%;
+                                object-fit: cover;
+                                border-top-left-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                            }
+                            .group-2 {
+                                padding: 15px;
+                            }
+                        }
+                        .child-1 {
+                            display: flex;
+                            flex-direction: row;
+                            flex-flow: row;
+                            position: relative;
+                            h4 {
+                                font-size: 12px;
+                            }
+                            p {
+                                font-size: 12px;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                            .group-2 {
+                                display: flex;
+                                flex-flow: column;
+                                flex-direction: column;
+                                position: relative;
+                                max-height: 260px;
+                                .mini-footer {
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                        .child-2 {
+                            display: flex;
+                            flex-direction: row;
+                            flex-flow: row;
+                            position: relative;
+                            margin-left: 40px;
+                            @media screen and (max-width: 991px) {
+                                margin-left: 0px;
+                            }
+                            h4 {
+                                font-size: 12px;
+                            }
+                            p {
+                                font-size: 12px;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                            .group-2 {
+                                display: flex;
+                                flex-flow: column;
+                                flex-direction: column;
+                                position: relative;
+                                max-height: 260px;
+                                .mini-footer {
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .hot-game-btn {
+                background-color: #cd132c;
+                color: white;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        #btn-arrow {
+            display: none;
+        }
+    }
+    .rotate-arrow {
+        transform: rotate(180deg);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+#special-section-clippers-season-20192020 .content .single-game-body .accordion .card .card-header .pre-view .left-side .group-1 {
+    min-width: 80px;
+}
+
+.pressed {
+    background-color: #ebebeb !important;
+    border: #1e4692 solid 1px !important;
+    transition: 0.1s all ease-in-out;
+    &:focus {
+        box-shadow: none;
+    }
+}

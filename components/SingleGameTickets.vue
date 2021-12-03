@@ -313,7 +313,7 @@
                   style="display: flex; justify-content: center"
                 >
                   <img
-                    src="../assets/loading-gif.gif"
+                    src="../assets/img/loading-gif.gif"
                     alt="this slowpoke moves"
                     width="200"
                   />
@@ -400,7 +400,8 @@ export default {
   watch: {
     filter: {
       handler: function (val) {
-        const all = this.$store.getters.all
+        debugger
+        const all = this.$store.state.all
         if ($.isEmptyObject(val)) {
           this.$store.commit('set_games', all)
           return
@@ -440,7 +441,7 @@ export default {
       deep: true,
     },
     month(val) {
-      const all = this.$store.getters.all
+      const all = this.$store.state.all
       const filteredTeams = all
         .filter((game) => {
           if (!val || game.h.tn == this.team || game.v.tn == this.team)

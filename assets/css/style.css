@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Agency fb wide";
+	src: url("../../assets/fonts/agencyfb-blackwide.ttf");
+}
+
 #special-section-clippers-season-20192020 .content {
     overflow: hidden;
 }
@@ -54,7 +59,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    background-image: url(../selector.png);
+    background-image: url(../img/selector.png);
     background-position: 93% center;
     background-size: 10px;
     background-repeat: no-repeat;
