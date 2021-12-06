@@ -1,0 +1,171 @@
+.card{
+  margin-top:40px;
+  height:580px;
+  font-family: "Agency fb wide";
+  color:#000;
+}
+
+.card-top{
+  padding:20px 0 0 20px;
+  background:transparent url("https://www.nba.com/resources/static/team/v2/clippers/custom/giveaways/img/bg-1.jpg") no-repeat;
+  background-size:cover;
+  position:relative;
+  height:355px;
+}
+.day{
+  text-transform: uppercase;
+  font-size:28px;
+  line-height: 32px;
+}
+.month{
+  font-weight: 900;
+  margin-top:5px;
+  font-size:42px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+.date{
+  font-weight: 900;
+  margin-top:12px;
+  font-size:82px;
+  line-height:62px;
+}
+.time{
+  font-size:28px;
+  line-height:32px;
+  padding:15px 0 0;
+}
+.name,
+.has-product .date-wrapper{
+  margin-left:-35px;
+  padding:20px 15px 15px 35px;
+  background:rgb(255,255,255, .4);
+  font-weight: 900;
+  margin-top:10px;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  min-height:90px;
+}
+.has-product .card-top{
+  padding-top:0;
+  height:355px;
+}
+.has-product .date-wrapper{
+  margin:0 0 0 -35px;
+  position: relative;
+  z-index: 1;
+}
+.has-product .day,
+.has-product .date{
+  text-transform: uppercase;
+  font-size:16px;
+  line-height: 22px;
+  font-weight:100;
+}
+
+.has-product .date{
+  font-weight: 900;
+  font-size: 24px;
+  margin-top:10px;
+}
+
+.has-product .product{
+  height:167px;
+  text-align: center;
+}
+.has-product .product-img{
+  max-height: 165px;
+  margin-left:-35px;
+}
+
+.name{
+  position: absolute;
+  z-index: 1;
+  bottom:0;
+  width:100%;
+  left:0;
+  margin-left:0;
+  padding-left:20px;
+}
+.sub-name{
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom:5px;
+}
+.title-name{
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom:5px;
+}
+
+.card-bottom{
+  background:transparent url("https://www.nba.com/resources/static/team/v2/clippers/custom/giveaways/img/bg-2.jpg");
+  background-size:contain;
+  color:#FFF;
+  padding:5px 0 20px;
+}
+
+.card-bottom .logo-sponsor,
+.card-bottom .logo-sponsor .logo-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-bottom .logo-sponsor .logo-left{
+  padding-right:20px;
+}
+.card-bottom .g-sponsor-right{
+  font-size:11px;
+  text-transform: uppercase;
+  padding-left:20px;
+  text-align: left;
+}
+.card-bottom .g-sponsor-logo{
+  width:100px;
+}
+.card-bottom .g-logo-wrapper{
+  /* padding:10px; 
+  background:#FFF; */
+}
+.card-bottom .vs-img{
+  width:20px;
+}
+.card-bottom .logo img{
+  max-width:90px;
+}
+.card-bottom .attendance{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Agency fb';
+  padding: 16px 25px 0;
+  height: 45px;
+  line-height: 19px;
+}
+.card-bottom .btn{
+	background:#da1a32;
+	border-radius: 0;
+	font-size: 26px;
+	line-height: 20px;
+	padding: 12px 12px 8px;
+  font-family: "Agency fb";
+	text-transform: uppercase;
+  margin-top:20px;
+}
+.card-bottom .btn-red{
+	color:#FFF;
+}
+.card-bottom .btn-red:hover{
+	background:#00438c;
+	color:#FFF;
+}
+.card.game-7 .g-sponsor-right .presented{
+  display: none;
+}
+.card.game-7 .g-sponsor-logo{
+  width: 80px;
+}
+
+.card.game-13 .name{
+  padding-top: 5px;
+}

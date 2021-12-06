@@ -1,0 +1,192 @@
+@font-face {
+	font-family: "Agency fb wide";
+	src: url("../../fonts/agencyfb-blackwide.ttf");
+}
+h2 {
+	font-family: roboto-regular;
+}
+
+h4.pane-title {
+	display: none;
+}
+
+#special-events-calendar .container h1 {
+	color: #000;
+	font-family: "Agency fb";
+	font-weight: 100;
+}
+
+#special-events-calendar .container .header-filters {
+	border: 0 none;
+	margin: 50px 0 20px 0;
+}
+
+.dropdown-toggle,
+.header-filters .right-side .btn-default {
+	font-size: 15px;
+	line-height: 22px;
+	padding-top: 10px;
+	font-weight: normal;
+}
+.banner-container {
+	max-width: 100%;
+}
+.header-filters .right-side {
+	font-family: "Agency fb";
+	color: #d7d7d7;
+	gap: 10px;
+	font-size: 20px;
+	margin-top: 0;
+	justify-content: flex-end;
+}
+.header-filters .right-side select {
+	color: #666;
+}
+.header-filters .right-side button {
+	color: #666;
+	font-size: 20px !important;
+}
+.header-filters .row-flex {
+	align-items: center;
+}
+.header-filters .right-side .other-select {
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	width: 150px;
+	padding: 10px;
+}
+.row-grid {
+	gap: 0 27px;
+}
+.row-grid .responsive-card {
+	max-width: 400px;
+}
+.row-grid .responsive-card .has-product .card-top .date-wrapper .day {
+	font-family: "Agency fb";
+	font-size: 22px;
+}
+.row-grid .responsive-card {
+	border-radius: 0 !important;
+	border: none !important;
+}
+.img-responsive {
+	display: none;
+}
+
+#page,
+.not-front #content {
+	background-color: #fff;
+	padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+	.header-filters .row {
+		flex-direction: column;
+	}
+	.header-filters .right-side .other-select {
+		width: 100%;
+	}
+	.header-filters .filter-dropdowns {
+		width: 100%;
+	}
+}
+@media (min-width: 752px) {
+	.row-full {
+		margin-left: calc(-100vw / 2 + 737px / 2);
+		margin-right: calc(-100vw / 2 + 737px / 2);
+		background-color: #eee;
+	}
+}
+@media (min-width: 1170px) {
+	.row-full {
+		margin-left: calc(-100vw / 2 + 1140px / 2);
+		margin-right: calc(-100vw / 2 + 1140px / 2);
+		background-color: #eee;
+	}
+}
+
+@media (max-width: 1400px) {
+	.row-grid .responsive-card {
+		max-width: 340px;
+	}
+}
+@media (max-width: 1200px) {
+	.row-grid .responsive-card {
+		width: 433px;
+		max-width: 433px;
+	}
+}
+@media (max-width: 992px) {
+	.row-grid .responsive-card {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+@media (min-width: 1441px) {
+	.row-full {
+		margin-left: calc(-100vw / 2 + 1155px / 2);
+		margin-right: calc(-100vw / 2 + 1155px / 2);
+		background-color: #eee;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.field-name-body > .container {
+		padding-left: 15px;
+		padding-right: 10px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.row-full-header {
+		margin: 0 -15px;
+	}
+	.img-responsive {
+		display: block;
+		width: 100%;
+	}
+	.header-text {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.row-full-header {
+		height: 510px;
+		margin: auto;
+		background: transparent
+			url("https://www.nba.com/resources/static/team/v2/clippers/custom/giveaways/img/hero6.jpg") no-repeat top
+			center;
+		background-size: cover;
+	}
+	.subhead {
+		font-size: 40px;
+	}
+	.header-text {
+		padding-top: 175px;
+		color: #fff;
+		font-family: "Agency FB Wide";
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	.icon {
+		margin-top: -8px;
+	}
+	.header-text h1 {
+		font-size: 66px;
+		font-weight: 900;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+	.nopadding-left {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+	}
+	.nopadding-right {
+		padding-right: 0 !important;
+		margin-right: 0 !important;
+	}
+	#special-events-calendar .container h1 {
+		font-size: 50px;
+	}
+}

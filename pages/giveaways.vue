@@ -1,6 +1,6 @@
 <template>
   <div>
     <Header />
-    <SingleGameTickets />
+    <Giveaways />
   </div>
 </template>

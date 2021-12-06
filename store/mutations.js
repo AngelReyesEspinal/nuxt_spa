@@ -20,6 +20,26 @@ export const set_games = (state, payload) => {
     state.games = payload;
 }
 
+export const set_all_giveaways_data = (state, payload) =>  {
+    state.all_giveaways_data = payload;
+}
+
+export const set_giveaways_data = (state, payload) =>  {
+    state.giveaways_data = payload;
+}
+
+export const set_giveaways_months = (state, payload) =>  {
+    state.giveaways_months = payload;
+}
+
+export const set_giveaways_days = (state, payload) =>  {
+    state.giveaways_days = payload;
+}
+
+export const set_giveaways_types = (state, payload) =>  {
+    state.giveaways_types = payload;
+}
+
 export const concat_season_games = (state, payload) => {
     state.all.push(...payload);
     state.all.forEach((game) => {

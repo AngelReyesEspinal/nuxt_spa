@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 import {
     season_games,
     preseason_games,
@@ -77,16 +79,66 @@ export const fetch_schedule = async ({ state, commit, dispatch }) => {
     }
 }
 
-export const fetch_giveaways = async ({ state, commit, dispatch }) => {
-    if (state.giveaways.length === 0) {
-        let json = {};
+export const fetch_giveaways_data = async ({ state, commit, dispatch }) => {
+    if (state.giveaways_data.length === 0) {
+        let data = {};
         try {
           const response = await fetch(giveaways);
-          json = await response.json();
+          data = await response.json();
         } catch (ex) {
           console.log(ex);
         } finally {
-          commit('set_giveaways', json);
+          data =  data.filter((x) => {
+            const date = new Date();
+            date.setHours(0, 0, 0, 0);
+            const date2 = new Date(x.eventTime)
+            date2.setHours(0,0,0,0)
+            const diff = date2.getTime() - date.getTime()
+            return  diff >= 0;
+          });
+
+          const all = data;
+
+          const months = all
+            .map(function (giveaway) {
+              const date = moment(giveaway.eventTime);
+              return date.format('MMMM');
+            })
+            .reduce(function (acc, month) {
+              if (!acc.includes(month)) {
+                acc.push(month);
+              }
+              return acc;
+            }, []);
+
+          const days = all
+            .map(function (giveaway) {
+              const date = moment(giveaway.eventTime);
+              return date.format('dddd');
+            })
+            .reduce(function (acc, day) {
+              if (!acc.includes(day)) {
+                acc.push(day);
+              }
+              return acc;
+            }, []);
+
+          const types = all
+            .map(function (g) {
+              return g.giveawayItemType;
+            })
+            .reduce(function (acc, t) {
+              if (!acc.includes(t)) {
+                acc.push(t);
+              }
+              return acc;
+            }, []);
+            
+          commit('set_all_giveaways_data', all);
+          commit('set_giveaways_data', data);
+          commit('set_giveaways_months', months);
+          commit('set_giveaways_days', days);
+          commit('set_giveaways_types', types);
         }
-    }
+      }
 }

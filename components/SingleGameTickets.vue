@@ -400,7 +400,6 @@ export default {
   watch: {
     filter: {
       handler: function (val) {
-        debugger
         const all = this.$store.state.all
         if ($.isEmptyObject(val)) {
           this.$store.commit('set_games', all)
