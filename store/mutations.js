@@ -5,7 +5,7 @@ export const set_all = (state, payload) => {
 }
 
 export const set_season_data = (state, payload) => {
-    state.set_season_data = payload;
+    state.season_data = payload;
 }
 
 export const set_schedule_data = (state, payload) => {
