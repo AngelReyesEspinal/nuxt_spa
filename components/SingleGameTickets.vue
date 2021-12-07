@@ -335,13 +335,6 @@ import moment from 'moment'
 export default {
   async created() {
     if (!this.isDataLoaded) await this.$store.dispatch('fetch_sgt_data')
-
-    setTimeout(() => {
-        console.log(this.$store.state.schedule_data)
-        console.log(this.$store.state.all)
-        console.log(this.$store.state.season_data)
-        console.log(this.$store.state.giveaways)
-    }, 10000)
   },
   data() {
     return {
@@ -387,8 +380,6 @@ export default {
       return this.$store.state.games
     },
     isDataLoaded() {
-  
-
       return (
         this.$store.state.schedule_data.length !== 0 &&
         this.$store.state.all.length !== 0 &&
